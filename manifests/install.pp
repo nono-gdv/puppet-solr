@@ -20,13 +20,5 @@ class solr::install {
     ensure  => present,
     require => Package['jetty'],
   }
-
-  package { 'wget':
-    ensure  => present,
-  }
-
-  package { 'curl':
-    ensure  => present,
-  }
 }
 
